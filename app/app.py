@@ -11,7 +11,8 @@ st.set_page_config(page_title="Analyse A/B Testing TikTok", layout="wide")
 st.title("📊 Analyse A/B Testing sur TikTok")
 
 # Chargement du dataset directement depuis le fichier local
-data = pd.read_csv("../data/tiktok_dataset.csv")
+DATA_PATH = "data/tiktok_dataset.csv"  # 👉 Remplacez par votre fichier
+data = pd.read_csv(DATA_PATH)
 st.success("✅ Fichier chargé avec succès !")
 
 # Nettoyage des données
